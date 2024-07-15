@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Login from "../components/Login";
 
 export default function Workouts(){
 
@@ -43,6 +45,11 @@ export default function Workouts(){
                         <div className="absolute mt-[45%] lg:mt-[25%] ml-5">
                             <h3 className="text-white workout-title">{workout.name}</h3>
                             <p className="text-white workout-description">{workout.description}</p>
+                            <div>
+                            <button className="btn-login text-white bg-black p-3 rounded">
+                                <Link to='/login'>Get Plan</Link>
+                            </button>
+                        </div>
                         </div>
                     </div>
                 ))}
