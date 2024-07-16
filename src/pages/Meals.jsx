@@ -28,10 +28,10 @@ export default function Meals(){
 
     return(
         <div className="h-full w-screen bg-black pt-10 pb-10">
-            <h1 className="flex justify-center text-white title-1">Empower your lifestyle</h1>
+            <h1 className="flex justify-center text-white title-1" data-aos='zoom-in' data-aos-onDurationChange='1000' data-aos-delay='100'>Empower your lifestyle</h1>
             <h2 className="flex justify-center text-white title-2">And nourish yourself.</h2>
 
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-8">
+            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-8" data-aos='fade-left' data-aos-delay='300'>
                 {meals.map((meal) =>(
                     <div className="grid meal-container" key={meal.id}>
                         <div className="gradient-black"></div>

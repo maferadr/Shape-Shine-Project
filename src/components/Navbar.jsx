@@ -24,15 +24,15 @@ export default function Navbar(){
                         nav ? (
                             <>
                              <div className="fixed w-full h-screen bg-gradient-to-r from-neutral-500/50 to-white/80 flex flex-col justify-center items-center z-20">
-                                <Link to='/' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
+                                <Link to='/' className="navbar w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
                                     <AiOutlineHome size={20}/>
                                     <span className="pl-2">Home</span>
                                 </Link>
-                                <Link to='/workouts' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
+                                <Link to='/workouts' className="navbar w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
                                     <CgGym size={20}/>
                                     <span className="pl-2">Workouts</span>
                                 </Link>
-                                <Link to='/meals' className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
+                                <Link to='/meals' className="navbar w-[75%] flex justify-center items-center rounded-full shadow-lg bg-brown-100 shadow-stone-500 m-2 p-4 hover:scale-110 ease-in duration-200">
                                     <GiHotMeal size={20}/>
                                     <span className="pl-2">Meals</span>
                                 </Link>
@@ -45,9 +45,9 @@ export default function Navbar(){
 
                 <div className="md:block hidden fixed top-[2%] z-10 right-4">
                     <div className="flex flex-row">
-                            <Link id="navbar" to='/' className="justify-between m-3">HOME</Link>
-                            <Link id="navbar" to='/workouts' className="justify-between m-3">WORKOUTS</Link>
-                            <Link id="navbar" to='/meals' className="justify-between m-3">MEALS</Link>
+                            <Link id="navbar" to='/' className="justify-between m-3 text-white">HOME</Link>
+                            <Link id="navbar" to='/workouts' className="justify-between m-3 text-white">WORKOUTS</Link>
+                            <Link id="navbar" to='/meals' className="justify-between m-3 text-white">MEALS</Link>
 
                     </div>
                 </div>  

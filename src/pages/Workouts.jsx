@@ -34,10 +34,10 @@ export default function Workouts(){
 
     return(
         <div className="h-100 bg-workouts top-0 pb-10 pt-10">
-            <h1 className="flex justify-center title-1">Trust the Process.</h1>
+            <h1  data-aos='zoom-in' data-aos-delay="100" className="flex justify-center title-1">Trust the Process.</h1>
             <h2 className="flex justify-center title-2">Join our Workout Routines.</h2>
 
-            <div className="pt-10 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+            <div className="pt-10 grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" data-aos='fade-right' data-aos-delay="300">
                 {workouts.map((workout)=>(
                     <div className="grid workout-container" key={workout.id}>
                         <div className="gradient-black"></div>
