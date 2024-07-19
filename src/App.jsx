@@ -1,4 +1,5 @@
 //Implementing Outlet middleware from react-router-dom to allow the routes browsing
+import React from 'react';
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
 import Navbar from './components/Navbar';
